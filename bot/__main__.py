@@ -63,7 +63,7 @@ def stats(update, context):
 def start(update, context):
     buttons = ButtonMaker()
     buttons.buildbutton("Updates Channel", "https://t.me/torrenttodrives")
-    buttons.buildbutton("Support Group", "https://t.me/+-emnL0RKuxk2YjU1")
+    buttons.buildbutton("Support Group", "https://t.me/torrenttodrives")
     uname = f'<a href="tg://user?id={update.message.from_user.id}">{update.message.from_user.first_name}</a>'
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
